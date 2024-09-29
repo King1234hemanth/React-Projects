@@ -1,0 +1,222 @@
+/* styling for the course card */
+
+/* then main div styling outer div styling */
+.main {
+  /* border: 1px solid black; */
+  width: 42%;
+  margin: 20px;
+  background-color: white;
+  border-radius: 23px;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* course img */
+.top img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* course title */
+.middle p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid silver;
+}
+
+/* footer styling contains price, rating, language & no of lectures */
+.footer {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* foter left part containd rating, language & no of lectures */
+.footer .left {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* rating div */
+.rating {
+  display: flex;
+  font-size: 15px;
+  /* border: 1px solid; */
+}
+/* rating text */
+.rating span {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+}
+/* rating image */
+.rating img {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.8px;
+}
+
+/* left side bottom div styling */
+.left-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* class for each div */
+.left-bottom .inner {
+  display: flex;
+  /* border: 1px solid; */
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+/* left bottom image */
+.left-bottom img {
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+}
+
+/* left bottom & right side text */
+.left-bottom span,
+.footer .right span {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* footer right side  */
+.footer .right {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/* footer right image */
+.footer .right img {
+  width: 22px;
+  height: 22px;
+  color: green;
+}
+
+/* footer right text */
+.footer .right span {
+  font-size: 30px;
+}
+
+/* Add to cart button styling */
+.cart button {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: rgb(103, 1, 103); */
+  color: white;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.cartColorPurple {
+  background-color: rgb(103, 1, 103);
+}
+.cartColorRed {
+  background-color: red;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 1019px) {
+  /* rating text */
+  .rating span {
+    font-size: 20px;
+  }
+  /* rating image */
+  .rating img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  /* card text */
+  .middle p {
+    font-size: 18px;
+
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  /* footer right side */
+  .footer .right {
+    margin-top: -2px;
+    margin-right: 5px;
+    /* border: 1px solid black; */
+    margin-left: -7px;
+  }
+  /* footer right img */
+  .footer .right img {
+    width: 17px;
+    height: 17px;
+  }
+
+  /* footer right text */
+  .footer .right span {
+    font-size: 25px;
+  }
+  /* Add to cart button styling */
+  .cart button {
+    margin-top: 2px;
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .main {
+    /* border: 1px solid black; */
+    width: 61%;
+  }
+  .middle p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .main {
+    /* border: 1px solid black; */
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  .middle p {
+    font-size: 18px;
+  }
+  .cart button {
+    font-size: 25px;
+  }
+}
